@@ -18,12 +18,29 @@
      <h3 class="title">Session</h3>
    </div>
 
-
-            
-
-
   {{> agendaList}}
 
+<!-- MODAL -->
+
+<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Speaker Info</h4>
+      </div>
+      <div class="modal-body">
+        <h3>Speaker Name: <p class="modalInfo">Some Name</p></h3>
+        <h3>Company: <p class="modalInfo">some company</p></h3>
+        <h3>Position: <p class="modalInfo">some position</p></h3>
+        <h3>Short Bio </h3>
+        <p class="modalInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos similique est exercitationem animi veritatis commodi voluptatem debitis fugit eaque perspiciatis harum, dolor dignissimos, quisquam numquam voluptates nam incidunt cupiditate quibusdam.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL END -->
 </template>
 
 <template name="agendaList">
@@ -45,12 +62,15 @@
     </div>
     <div class="speakers">
     <h3>Speakers</h3>
-    <p>Catherine McAteer and Kate Joseph</p>
+    <a href="" data-toggle="modal" data-target="#myModal"><p>Catherine McAteer and Kate Joseph</p></a>
     </div>
   </div>
 </div>
 
 <!-- Agenda section END -->
+
+
+
 
 <div class="agenda">
   <div class="date"><p>Wednesday 24 September
