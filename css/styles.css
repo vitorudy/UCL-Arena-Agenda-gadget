@@ -93,7 +93,21 @@ h3 {
 /********    MODAL       **********/
 
 .modalInfo {
-  color:#666;
+  color:#333;
   font-size: 1em;
   display: inline-block;
+}
+
+.modal-header {
+  background-color: #222222;
+}
+.modal-title {
+  color:#47A6C9;
+}
+
+.close {
+  color:white;
+}
+.close:hover {
+  color:white;
 }
