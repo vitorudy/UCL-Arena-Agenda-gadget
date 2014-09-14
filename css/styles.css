@@ -98,16 +98,22 @@ h3 {
   display: inline-block;
 }
 
-.modal-header {
-  background-color: #222222;
+a, a:hover {
+  text-decoration: none;
+  color:#47A6C9;
+  font-size: 0.9em;
+}
+
+/*.modal-header {
+  background-color: #47A6C9;
 }
 .modal-title {
-  color:#47A6C9;
+  color:#222;
 }
 
 .close {
-  color:white;
+  color:#222;
 }
 .close:hover {
-  color:white;
-}
+  color:#666;
+}*/
